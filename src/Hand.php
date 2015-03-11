@@ -4,15 +4,17 @@
     {
         function compareHand($player1, $player2)
         {
+            $player1_lower = strtolower($player1);
+            $player2_lower = strtolower($player2);
 
-            if(strtolower($player1) =="rock")
+            if($player1_lower =="rock")
             {
-                if( strtolower($player2) == "rock")
+                if( $player2_lower == "rock")
                 {
                     return "Draw";
                 }
 
-                elseif (strtolower($player2) == "scissors")
+                elseif ($player2_lower == "scissors")
                 {
                     return "Player 1";
                 }
@@ -21,14 +23,14 @@
                 {
                     return "Player 2";
                 }
-            } elseif (strtolower($player1) == "scissors")
+            } elseif ($player1_lower == "scissors")
             {
-                if(strtolower($player2) == "scissors")
+                if($player2_lower == "scissors")
                 {
                     return "Draw";
                 }
 
-                elseif(strtolower($player2) == "rock")
+                elseif($player2_lower == "rock")
                 {
                     return "Player 2";
                 }
@@ -38,13 +40,13 @@
                 }
             }
 
-            elseif(strtolower($player1)=="paper")
+            elseif( $player1_lower =="paper")
             {
-                if(strtolower($player2) == "paper")
+                if($player2_lower == "paper")
                 {
                     return "Draw";
                 }
-                elseif(strtolower($player2) == "rock")
+                elseif($player2_lower == "rock")
                 {
                     return "Player 1";
                 }
