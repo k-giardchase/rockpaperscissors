@@ -52,6 +52,10 @@
                     return "Player 2";
                 }
             }
+
+            else {
+                return "Please enter either rock, paper, or scissors.";
+            }
         }
     }
 
