@@ -32,6 +32,10 @@
                 {
                     return "Player 2";
                 }
+
+                else {
+                    return  "Player 1";
+                }
             }
         }
     }
