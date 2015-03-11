@@ -37,6 +37,14 @@
                     return  "Player 1";
                 }
             }
+
+            elseif(strtolower($player1)=="paper")
+            {
+                if(strtolower($player2) == "paper")
+                {
+                    return "Draw";
+                }
+            }
         }
     }
 
