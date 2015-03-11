@@ -12,58 +12,55 @@ draw if both players choose the same
 ========================
 Spec What
 
-1. First player inputs 'Rock' and second player inputs 'scissors' and the output is 'player 1'
-input: input1: 'rock',
-       input2: 'scissors'
-output: 'player1'
-
-2. First player inputs 'Rock' and second player inputs 'paper' and the output is 'player 2'
-input: input1: 'rock',
-       input2: 'paper'
-output: 'player2'
-
-3. First player inputs 'Rock' and second player inputs 'Rock' and the output is 'player 2'
+1. First player inputs 'Rock' and second player inputs 'Rock' and the output is 'player 2'
 input: input1: 'rock',
        input2: 'rock'
 output: 'draw'
 
-4. First player inputs 'Scissors' and second player inputs 'rock' and the output is 'player 1'
-input: input1: 'scissors',
-       input2: 'rock'
-output: 'player2'
-
-5. First player inputs 'Scissors' and second player inputs 'paper' and the output is 'player 2'
-input: input1: 'scissors',
-       input2: 'paper'
+2. First player inputs 'Rock' and second player inputs 'scissors' and the output is 'player 1'
+input: input1: 'rock',
+       input2: 'scissors'
 output: 'player1'
 
-6. First player inputs 'Scissors' and second player inputs 'Scissors' and the output is 'player 2'
+3. First player inputs 'Rock' and second player inputs 'paper' and the output is 'player 2'
+input: input1: 'rock',
+       input2: 'paper'
+output: 'player2'
+
+4. First player inputs 'Scissors' and second player inputs 'Scissors' and the output is 'player 2'
 input: input1: 'scissors',
        input2: 'scissors'
 output: 'draw'
 
-7. First player inputs 'Paper' and second player inputs 'rock' and the output is 'player 1'
+5. First player inputs 'Scissors' and second player inputs 'rock' and the output is 'player 1'
+input: input1: 'scissors',
+       input2: 'rock'
+output: 'player2'
+
+6. First player inputs 'Scissors' and second player inputs 'paper' and the output is 'player 2'
+input: input1: 'scissors',
+       input2: 'paper'
+output: 'player1'
+
+7. First player inputs 'Paper' and second player inputs 'Paper' and the output is 'draw'
+input: input1: 'paper',
+       input2: 'paper'
+output: 'draw'
+
+8. First player inputs 'Paper' and second player inputs 'rock' and the output is 'player 1'
 input: input1: 'paper',
        input2: 'rock'
 output: 'player1'
 
-8. First player inputs 'Paper' and second player inputs 'scissors' and the output is 'player 2'
+9. First player inputs 'Paper' and second player inputs 'scissors' and the output is 'player 2'
 input: input1: 'paper',
        input2: 'scissors'
 output: 'player2'
-
-9. First player inputs 'Paper' and second player inputs 'Paper' and the output is 'draw'
-input: input1: 'paper',
-       input2: 'paper'
-output: 'draw'
 
 10. First player inputs capitalized input and second player also inputs capitalized input and the inputs will still be compared as above.
-input: input1: 'CAPS',
-       input2: 'CAPS'
-output: 'normal'
-
-
-
+input: input1: 'rOCk',
+       input2: 'pAPer'
+output: 'player2'
 
 ========================
 Spec How
