@@ -9,7 +9,7 @@
 
             if($player1_lower =="rock")
             {
-                if( $player2_lower == "rock")
+                if($player2_lower == "rock")
                 {
                     return "Draw";
                 }
@@ -42,7 +42,7 @@
                 }
             }
 
-            elseif( $player1_lower =="paper")
+            elseif($player1_lower == "paper")
             {
                 if($player2_lower == "paper")
                 {
