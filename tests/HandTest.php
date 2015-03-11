@@ -47,6 +47,50 @@
             $this->assertEquals("Player 2", $result);
         }
 
+        //start reversal
+
+        function test_scissors_scissors()
+        {
+            //Arrange
+            $test_scissors_scissors = new Hand;
+            $player1 = 'scissors';
+            $player2 = 'scissors';
+
+            //Act
+            $result = $test_scissors_scissors->compareHand($player1,$player2);
+
+            //Assert
+            $this->assertEquals("Draw", $result);
+        }
+
+
+        // function test_scissors_rock()
+        // {
+        //     //Arrange
+        //     $test_scissors_rock = new Hand;
+        //     $player1 = 'scissors';
+        //     $player2 = 'rock';
+        //
+        //     //Act
+        //     $result = $test_scissors_rock->compareHand($player1, $player2);
+        //     //Assert
+        //     $this->assertEquals("Player 2", $result);
+        //
+        // }
+        //
+        // function test_scissors_paper()
+        // {
+        //     //Arrange
+        //     $test_scissors_paper = new Hand;
+        //     $player1 = 'scissors';
+        //     $player2= 'paper';
+        //
+        //     //Act
+        //     $result = $test_scissors_paper->compareHand($player1, $player2);
+        //
+        //     //Assert
+        //     $this->assertEquals("Player 1", $result);
+        // }
 
     }
 
