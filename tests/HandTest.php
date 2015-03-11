@@ -121,6 +121,20 @@
 
         }
 
+        function test_paper_scissors()
+        {
+            //Arrange
+            $test_paper_scissors = new Hand;
+            $player1 = "paper";
+            $player2 = "scissors";
+
+            //Act
+            $result = $test_paper_scissors->compareHand($player1, $player2);
+
+            //Assert
+            $this->assertEquals("Player 2", $result);
+        }
+
     }
 
 
