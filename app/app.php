@@ -22,12 +22,44 @@
 
   });
 
-  $app->get('/create_hand', function() use ($app) {
+  $app->get('/create_hand', function() use ($app)
+   {
      $new_hand = new Hand;
 
-     $run_comparison = $new_hand->compareHand($_GET['player1'], $_GET['player2']);
+     $plyr1=$_GET['player1'];
+     $plyr2=$_GET['player2'];
 
-     return $app['twig']->render('hand_result.twig', array('winner' => $run_comparison));
+     if(empty($plyr2))
+     {
+         $computer_number = rand(1, 3);
+         if($computer_number <= 1)
+         {
+             $player2 = "rock";
+        //     return $player2;
+         } elseif ($computer_number >1 && $computer_number < 2)
+         {
+             $player2 = "scissors";
+        //     return $player2;
+         }
+         else
+          {
+             $player2 = "paper";
+    //         return $player2;
+         }
+
+         $run_comparison =   $new_hand->compareHand($_GET['player1'], $player2);
+
+         return $app['twig']->render('hand_result.twig', array('winner' => $run_comparison));
+     }
+
+     else
+     {
+         $run_comparison =   $new_hand->compareHand($_GET['player1'], $_GET['player2']);
+
+         return $app['twig']->render('hand_result.twig', array('winner' => $run_comparison));
+     }
+
+
 
   });
 
