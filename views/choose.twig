@@ -6,14 +6,24 @@
  </head>
 <body>
         <div class="container">
-            <h3 class="text-success">How many players?</h3>
-            <form action='/single_person_form'>
-                <button type="submit">One</button>
-            </form>
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+                <h3 class="text-success">How many players?</h3>
+            </div>
+            <div class="col-md-4">
+            </div>
 
-            <form action='/multi_person_form'>
-              <button type="submit">Two</button>
-            </form>
+            <div class="col-md-6">
+              <form action='/single_person_form'>
+                <button class="btn btn-success" type="submit">One Player</button>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <form action='/multi_person_form'>
+                <button class="btn btn-info" type="submit">Two Players</button>
+              </form>
+          </div>
 
         </div>
 </body>
