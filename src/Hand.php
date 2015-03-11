@@ -44,6 +44,10 @@
                 {
                     return "Draw";
                 }
+                elseif(strtolower($player2) == "rock")
+                {
+                    return "Player 1";
+                }
             }
         }
     }
