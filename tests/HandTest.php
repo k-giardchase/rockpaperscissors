@@ -106,6 +106,21 @@
             $this->assertEquals("Draw", $result);
         }
 
+        function test_paper_rock()
+        {
+            //Arrange
+            $test_paper_rock = new Hand;
+            $player1 = "paper";
+            $player2 = "rock";
+
+            //Act
+            $result = $test_paper_rock->compareHand($player1, $player2);
+
+            //Assert
+            $this->assertEquals("Player 1", $result);
+
+        }
+
     }
 
 
