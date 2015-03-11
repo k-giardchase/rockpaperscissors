@@ -9,37 +9,20 @@
 
             if($player1_lower =="rock")
             {
-
-                // $player2_lower = "rock";
-
-                switch ($player2_lower)
+                if( $player2_lower == "rock")
                 {
-                    case "rock":
-                        return "Draw";
-                        break;
-                    case "scissors":
-                        return "Player 1";
-                        break;
-                    case "paper":
-                        return "Player 2";
-                        break;
-                    default:
-                        return "enter rock paper or scissors";
+                    return "Draw";
                 }
-                // if( $player2_lower == "rock")
-                // {
-                //     return "Draw";
-                // }
-                //
-                // elseif ($player2_lower == "scissors")
-                // {
-                //     return "Player 1";
-                // }
-                //
-                // else
-                // {
-                //     return "Player 2";
-                // }
+
+                elseif ($player2_lower == "scissors")
+                {
+                    return "Player 1";
+                }
+
+                else
+                {
+                    return "Player 2";
+                }
             }
 
             elseif ($player1_lower == "scissors")
