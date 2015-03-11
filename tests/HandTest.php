@@ -33,6 +33,20 @@
 
         }
 
+        function test_rock_paper()
+        {
+            //Arrange
+            $test_rock_paper = new Hand;
+            $player1 = 'rock';
+            $player2= 'paper';
+
+            //Act
+            $result = $test_rock_paper->compareHand($player1, $player2);
+
+            //Assert
+            $this->assertEquals("Player 2", $result);
+        }
+
 
     }
 

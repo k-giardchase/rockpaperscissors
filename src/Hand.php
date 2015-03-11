@@ -17,7 +17,7 @@
                     return "Player 1";
                 }
 
-                elseif (strtolower($player2) == "paper")
+                else
                 {
                     return "Player 2";
                 }
