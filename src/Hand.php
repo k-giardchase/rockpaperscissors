@@ -21,6 +21,12 @@
                 {
                     return "Player 2";
                 }
+            } elseif (strtolower($player1) == "scissors")
+            {
+                if(strtolower($player2) == "scissors")
+                {
+                    return "Draw";
+                }
             }
         }
     }
