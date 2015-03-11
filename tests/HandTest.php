@@ -64,19 +64,19 @@
         }
 
 
-        // function test_scissors_rock()
-        // {
-        //     //Arrange
-        //     $test_scissors_rock = new Hand;
-        //     $player1 = 'scissors';
-        //     $player2 = 'rock';
-        //
-        //     //Act
-        //     $result = $test_scissors_rock->compareHand($player1, $player2);
-        //     //Assert
-        //     $this->assertEquals("Player 2", $result);
-        //
-        // }
+        function test_scissors_rock()
+        {
+            //Arrange
+            $test_scissors_rock = new Hand;
+            $player1 = 'scissors';
+            $player2 = 'rock';
+
+            //Act
+            $result = $test_scissors_rock->compareHand($player1, $player2);
+            //Assert
+            $this->assertEquals("Player 2", $result);
+
+        }
         //
         // function test_scissors_paper()
         // {
