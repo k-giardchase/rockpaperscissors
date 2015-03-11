@@ -77,20 +77,20 @@
             $this->assertEquals("Player 2", $result);
 
         }
-        //
-        // function test_scissors_paper()
-        // {
-        //     //Arrange
-        //     $test_scissors_paper = new Hand;
-        //     $player1 = 'scissors';
-        //     $player2= 'paper';
-        //
-        //     //Act
-        //     $result = $test_scissors_paper->compareHand($player1, $player2);
-        //
-        //     //Assert
-        //     $this->assertEquals("Player 1", $result);
-        // }
+
+        function test_scissors_paper()
+        {
+            //Arrange
+            $test_scissors_paper = new Hand;
+            $player1 = 'scissors';
+            $player2= 'paper';
+
+            //Act
+            $result = $test_scissors_paper->compareHand($player1, $player2);
+
+            //Assert
+            $this->assertEquals("Player 1", $result);
+        }
 
     }
 
